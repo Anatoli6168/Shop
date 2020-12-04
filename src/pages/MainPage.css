@@ -1,0 +1,22 @@
+.mainpage {
+    font-size: 18px;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.mainpage__color {
+    color: cadetblue;
+    margin-bottom: 20px;
+}
+.mainpage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainpage img {
+    object-fit: contain;
+    align-self: start;
+    margin: 0 auto;
+}
