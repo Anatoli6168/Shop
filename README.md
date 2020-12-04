@@ -1,6 +1,5 @@
 # Getting Started with Create React App
 
-start bd: json-server --watch db.json --port 3004
 start ngrok ngrok http 3004 -host-header="localhost:3004"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
