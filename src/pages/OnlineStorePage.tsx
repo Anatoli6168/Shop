@@ -13,7 +13,7 @@ interface DataValue {
 
 export const OnlineStore: React.FC = () => {
     const [products, setProducts] = useState<DataValue[]>([])
-    const [productsInPage, setProductsInPage] = useState<number>(1)
+    const [productsInPage, setProductsInPage] = useState<number>(3)
     const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
@@ -61,10 +61,10 @@ export const OnlineStore: React.FC = () => {
     return (
         <>
             <Header />
-            <button onClick={() => setProductsInPage(prev => prev + 1)} >Загрузить больше</button><span style={{marginLeft: '100px'}}>Подгрузка Выглядит забавно, потому что на флексах)</span>
-            <div className="card__container">
+            <button onClick={() => setProductsInPage(prev => prev - 1)} >Загрузить меньше</button><span style={{marginLeft: '100px'}}>Подгрузка Выглядит забавно, потому что на флексах)</span>
+{/*             <div className="card__container">
                 {products.map((item, index) => (<Card children={item} key={index} />))}
-            </div>
+            </div> */}
         </>
     )
 }

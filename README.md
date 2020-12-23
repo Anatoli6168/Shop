@@ -1,7 +1,8 @@
+Backend с mongo есть. Простенький, без валидаций, для начала выполняет все, что мне от него требуется.
+
 # Getting Started with Create React App
 
-start bd: json-server --watch db.json --port 3004
-start ngrok ngrok http 3004 -host-header="localhost:3004"
+start ngrok: ngrok http 3000 -host-header="localhost:3000"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
